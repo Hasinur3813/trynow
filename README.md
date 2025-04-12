@@ -1,12 +1,43 @@
-# React + Vite
+# 🕶️ TryNow Eyeglasses Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TryNow** is a modern, sleek, and responsive eyeglasses eCommerce web application built with **React**, **Tailwind CSS**, and **React Icons**. It features categorized product displays, flash sales, brand filtering, rating integration, and a stylish UI optimized for performance and engagement.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 👓 **Eyeglasses Categories** (Men, Women, Baby, Young Fashion)
+- ⚡ **Flash Sale** Countdown and Carousel
+- 🛍️ **Product Listings**: Best Selling, New Arrivals, Discounted Offers
+- ⭐ **Rating System** for product feedback
+- 🔄 **Interactive Icons**: Wishlist, Cart, View, Compare
+- 🏷️ **Top Brand Display** with marquee scrolling
+- 📩 **Newsletter Subscription**
+- 📱 Fully Responsive Design
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** (with Hooks)
+- **Tailwind CSS** (for styling)
+- **React Icons** (for icons)
+- **Swiper.js** (for product carousels)
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/hasinur3813/trynow-eyeglasses.git
+
+# Navigate into the project directory
+cd trynow-eyeglasses
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
