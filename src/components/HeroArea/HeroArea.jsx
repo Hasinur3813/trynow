@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { FaChevronLeft, FaChevronRight, FaChevronDown } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function HeroArea() {
   const heroSliderPrev = useRef(null);

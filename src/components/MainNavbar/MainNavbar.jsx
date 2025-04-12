@@ -38,7 +38,7 @@ export default function MainNavbar() {
           </button>
 
           {dropdownOpen && (
-            <div className="absolute top-full left-0 mt-3 w-48 bg-white rounded-lg drop-shadow-2xl z-10">
+            <div className="absolute top-full left-5 mt-3 w-52 bg-white rounded-lg drop-shadow-2xl z-10">
               <ul className="p-4 text-sm text-charcoal rounded-lg  bg-white space-y-2">
                 {brand.map((brand, idx) => (
                   <li
