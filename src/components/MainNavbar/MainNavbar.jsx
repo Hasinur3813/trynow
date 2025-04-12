@@ -1,6 +1,21 @@
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+const brand = [
+  "Police",
+  "Gucci",
+  "Ray Ban",
+  "Titan",
+  "Dragon",
+  "Emilio Puccini",
+  "Hugo Boss",
+  "Harley Dividson",
+  "Oakley",
+  "Oakley Youth",
+  "O'Neill",
+  "Puma",
+];
+
 export default function MainNavbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -11,7 +26,7 @@ export default function MainNavbar() {
         <div className="relative">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
-            className="flex items-center gap-1 text-lg font-semibold text-white cursor-pointer bg-black px-6 py-4 rounded-lg hover:text-midnight"
+            className="flex items-center gap-1 text-lg font-semibold text-white cursor-pointer bg-black px-6 py-4 rounded-2xl hover:text-midnight"
           >
             Shop by Category
             <MdKeyboardArrowDown
@@ -23,13 +38,16 @@ export default function MainNavbar() {
           </button>
 
           {dropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-lightgray rounded shadow-lg z-10">
-              <ul className="p-4 text-sm text-charcoal space-y-2">
-                <li className="hover:text-tahiti cursor-pointer">Ray-Ban</li>
-                <li className="hover:text-tahiti cursor-pointer">Oakley</li>
-                <li className="hover:text-tahiti cursor-pointer">Persol</li>
-                <li className="hover:text-tahiti cursor-pointer">Prada</li>
-                <li className="hover:text-tahiti cursor-pointer">Gucci</li>
+            <div className="absolute top-full left-0 mt-3 w-48 bg-white rounded-lg drop-shadow-2xl z-10">
+              <ul className="p-4 text-sm text-charcoal rounded-lg  bg-white space-y-2">
+                {brand.map((brand, idx) => (
+                  <li
+                    className="cursor-pointer hover:translate-x-1 duration-300 transition-transform"
+                    key={idx}
+                  >
+                    {brand}
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -37,17 +55,27 @@ export default function MainNavbar() {
 
         {/* Center: Nav Links */}
         <ul className="flex gap-8 text-base font-semibold text-black">
-          <li className="hover:text-midnight cursor-pointer">Home</li>
-          <li className="hover:text-midnight cursor-pointer">Shop</li>
-          <li className="hover:text-midnight cursor-pointer">Featured</li>
-          <li className="hover:text-midnight cursor-pointer">Blog</li>
-          <li className="hover:text-midnight cursor-pointer">Contact</li>
+          <li className="hover:text-midnight cursor-pointer flex items-center gap-1">
+            Home <MdKeyboardArrowDown className="mt-1" />
+          </li>
+          <li className="hover:text-midnight cursor-pointer flex items-center gap-1">
+            Shop <MdKeyboardArrowDown className="mt-1" />
+          </li>
+          <li className="hover:text-midnight cursor-pointer flex items-center gap-1">
+            Eyeglassess <MdKeyboardArrowDown className="mt-1" />
+          </li>
+
+          <li className="hover:text-midnight cursor-pointer">About Us</li>
         </ul>
 
         {/* Right: Promo or Badge */}
-        <div className="text-xs bg-tahiti text-white px-3 py-1 rounded-full font-semibold shadow-sm hover:bg-midnight cursor-pointer transition">
-          Hot Deals
-        </div>
+        <button
+          type="button"
+          className="bg-black cursor-pointer text-white text-end p-2 px-10 rounded-tl-lg rounded-tr-full rounded-br-lg rounded-bl-full h-full max-w-md"
+        >
+          <p>Get 50% off on the app</p>
+          <h5 className="animate-pulse">Download Now</h5>
+        </button>
       </div>
     </nav>
   );
