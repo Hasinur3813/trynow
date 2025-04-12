@@ -8,6 +8,7 @@ import AllProductsSection from "../components/AllProductsSection/AllProductsSect
 import BestSellingSection from "../components/BestSellingSection/BestSellingSection";
 import DiscountedPrice from "../components/DiscountedPrice/DiscountedPrice";
 import NewArrival from "../components/NewArrival/NewArrival";
+import TopBrands from "../components/TopBrands/TopBrands";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <BestSellingSection />
       <DiscountedPrice />
       <NewArrival />
+      <TopBrands />
     </div>
   );
 };
