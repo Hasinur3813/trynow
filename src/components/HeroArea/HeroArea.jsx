@@ -29,7 +29,7 @@ export default function HeroArea() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-[#effaff]">
       <div className="container mx-auto px-4">
         <div className="relative">
           <Swiper
