@@ -116,7 +116,7 @@
     "isNew": false,
     "isOnSale": true,
     "discountPercent": 24,
-    "tags": ["discounted_offer"],
+    "tags": ["discounted_offer", "best_selling"],
     "stock": 0
   },
   {
