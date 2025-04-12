@@ -9,6 +9,8 @@ import BestSellingSection from "../components/BestSellingSection/BestSellingSect
 import DiscountedPrice from "../components/DiscountedPrice/DiscountedPrice";
 import NewArrival from "../components/NewArrival/NewArrival";
 import TopBrands from "../components/TopBrands/TopBrands";
+import NewsLetter from "../components/NewsLetter/NewsLetter";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
       <DiscountedPrice />
       <NewArrival />
       <TopBrands />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 };

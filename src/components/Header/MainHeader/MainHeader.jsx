@@ -7,7 +7,9 @@ export default function MainHeader() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-midnight tracking-wide">
-          GlazNow
+          <a href="#">
+            <img src="/logo.jpg" alt="try-now" />
+          </a>
         </h1>
 
         {/* Search Box */}

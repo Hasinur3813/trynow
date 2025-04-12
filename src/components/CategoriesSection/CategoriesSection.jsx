@@ -3,13 +3,25 @@ import useGlassess from "../../hooks/useGlasses";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 
 const categories = [
-  { id: 1, name: "Men", image: ["/glass1.png", "/glass1.png", "glass1.png"] },
-  { id: 2, name: "Women", image: ["/glass1.png", "/glass1.png", "glass1.png"] },
-  { id: 3, name: "Baby", image: ["/glass1.png", "/glass1.png", "glass1.png"] },
+  {
+    id: 1,
+    name: "Men",
+    image: ["/images/glass1.png", "/images/glass2.png", "/images/glass3.png"],
+  },
+  {
+    id: 2,
+    name: "Women",
+    image: ["/images/glass4.png", "/images/glass5.png", "/images/glass6.png"],
+  },
+  {
+    id: 3,
+    name: "Baby",
+    image: ["/images/glass7.png", "/images/glass8.png", "/images/glass9.png"],
+  },
   {
     id: 4,
     name: "Young Fashion",
-    image: ["/glass1.png", "/glass1.png", "glass1.png"],
+    image: ["/images/glass10.png", "/images/glass11.png", "/images/glass3.png"],
   },
 ];
 
@@ -66,7 +78,7 @@ const CategoriesSection = () => {
 
           {categories.map((category) => (
             <div
-              className="rounded-md shadow-md bg-white p-2 col-span-5"
+              className="rounded-md shadow-md bg-white p-4 col-span-5"
               key={category.id}
             >
               <p className="text-lg my-2 font-semibold">{category.name}</p>
@@ -74,14 +86,14 @@ const CategoriesSection = () => {
                 {category.image.map((image, idx) => (
                   <div
                     key={idx}
-                    className={`p-2 rounded ${
+                    className={`w-40 h-40 flex items-center justify-center rounded overflow-hidden ${
                       category.name === "Men" ? "bg-[#e9f8ff]" : "bg-[#f7f7f7]"
                     }`}
                   >
                     <img
-                      className="hover:scale-110 duration-300 transition-transform"
+                      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
                       src={image}
-                      alt={category.name}
+                      alt={`${category.name} ${idx + 1}`}
                     />
                   </div>
                 ))}

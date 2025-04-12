@@ -17,7 +17,7 @@ const brand = [
 ];
 
 export default function MainNavbar() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(true);
 
   return (
     <nav className=" py-3 mt-5">
