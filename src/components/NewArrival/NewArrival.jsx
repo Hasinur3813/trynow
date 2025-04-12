@@ -1,23 +1,19 @@
 import React from "react";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
-import Countdown from "./components/Countdown";
 import SectionCarousel from "../shared/SectionCarousel/SectionCarousel";
 
-const FlashSell = () => {
+const NewArrival = () => {
   return (
     <section className="py-14">
       <div className="container mx-auto px-4">
-        <SectionTitle>Flash Sell</SectionTitle>
-
-        {/* deal of the day */}
-        <Countdown />
+        <SectionTitle>New Arrival</SectionTitle>
 
         <div className="mt-10">
-          <SectionCarousel dataToShow={"flash_sale"} />
+          <SectionCarousel dataToShow={"new_arrival"} />
         </div>
       </div>
     </section>
   );
 };
 
-export default FlashSell;
+export default NewArrival;

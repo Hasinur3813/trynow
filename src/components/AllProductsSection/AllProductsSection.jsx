@@ -1,16 +1,12 @@
 import React from "react";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
-import Countdown from "./components/Countdown";
 import SectionCarousel from "../shared/SectionCarousel/SectionCarousel";
 
-const FlashSell = () => {
+const AllProductsSection = () => {
   return (
     <section className="py-14">
       <div className="container mx-auto px-4">
-        <SectionTitle>Flash Sell</SectionTitle>
-
-        {/* deal of the day */}
-        <Countdown />
+        <SectionTitle>All Products</SectionTitle>
 
         <div className="mt-10">
           <SectionCarousel dataToShow={"flash_sale"} />
@@ -20,4 +16,4 @@ const FlashSell = () => {
   );
 };
 
-export default FlashSell;
+export default AllProductsSection;

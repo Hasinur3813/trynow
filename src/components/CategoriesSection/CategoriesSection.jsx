@@ -1,5 +1,5 @@
 import React from "react";
-import useGlassess from "../../hooks/useGlassess";
+import useGlassess from "../../hooks/useGlasses";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 
 const categories = [
@@ -71,12 +71,12 @@ const CategoriesSection = () => {
             >
               <p className="text-lg my-2 font-semibold">{category.name}</p>
               <div className="flex items-center justify-between gap-3">
-                {category.image.map((image) => (
+                {category.image.map((image, idx) => (
                   <div
+                    key={idx}
                     className={`p-2 rounded ${
                       category.name === "Men" ? "bg-[#e9f8ff]" : "bg-[#f7f7f7]"
                     }`}
-                    key={category.id}
                   >
                     <img
                       className="hover:scale-110 duration-300 transition-transform"
