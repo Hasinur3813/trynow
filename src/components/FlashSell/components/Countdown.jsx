@@ -3,7 +3,7 @@ import { countdown } from "../../../utils/countdown";
 
 const DealCountdown = () => {
   // Set your end time here (adjust as needed)
-  const endTime = new Date("2025-04-17T23:59:59").getTime();
+  const endTime = new Date("2025-04-25T23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: "00",

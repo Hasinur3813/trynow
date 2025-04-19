@@ -12,7 +12,8 @@
     "isOnSale": true,
     "discountPercent": 29,
     "tags": ["best_selling", "discounted_offer", "flash_sale"],
-    "stock": 100
+    "stock": 100,
+    "description": "Stylish bold edge glasses designed for modern men. Perfect for both casual and formal occasions."
   },
   {
     "id": "gl002",
@@ -27,7 +28,8 @@
     "isOnSale": true,
     "discountPercent": 33,
     "tags": ["new_arrival", "discounted_offer"],
-    "stock": 0
+    "stock": 0,
+    "description": "Elegant classic frame glasses for women, offering timeless style and comfort."
   },
   {
     "id": "gl003",
@@ -42,7 +44,8 @@
     "isOnSale": false,
     "discountPercent": 0,
     "tags": ["best_selling"],
-    "stock": 75
+    "stock": 75,
+    "description": "Retro-inspired round glasses suitable for all genders. A perfect blend of vintage and modern design."
   },
   {
     "id": "gl004",
@@ -57,7 +60,8 @@
     "isOnSale": true,
     "discountPercent": 40,
     "tags": ["new_arrival", "discounted_offer", "flash_sale"],
-    "stock": 120
+    "stock": 120,
+    "description": "Durable and lightweight glasses for kids, designed to provide clear vision and comfort."
   },
   {
     "id": "gl005",
@@ -72,7 +76,8 @@
     "isOnSale": true,
     "discountPercent": 22,
     "tags": ["discounted_offer", "flash_sale"],
-    "stock": 80
+    "stock": 80,
+    "description": "Protect your eyes from harmful blue light with these stylish and effective glasses."
   },
   {
     "id": "gl006",
@@ -87,7 +92,8 @@
     "isOnSale": true,
     "discountPercent": 27,
     "tags": ["discounted_offer", "flash_sale"],
-    "stock": 0
+    "stock": 0,
+    "description": "Designed for active lifestyles, these sporty glasses are perfect for outdoor and athletic activities."
   },
   {
     "id": "gl007",
@@ -102,7 +108,8 @@
     "isOnSale": true,
     "discountPercent": 25,
     "tags": ["new_arrival", "discounted_offer"],
-    "stock": 90
+    "stock": 90,
+    "description": "Chic and elegant cat-eye glasses for women, adding a touch of sophistication to any outfit."
   },
   {
     "id": "gl008",
@@ -117,7 +124,8 @@
     "isOnSale": true,
     "discountPercent": 24,
     "tags": ["discounted_offer", "best_selling"],
-    "stock": 0
+    "stock": 0,
+    "description": "Minimalist transparent glasses with a modern design, suitable for all genders."
   },
   {
     "id": "gl009",
@@ -132,7 +140,8 @@
     "isOnSale": true,
     "discountPercent": 28,
     "tags": ["discounted_offer", "flash_sale"],
-    "stock": 110
+    "stock": 110,
+    "description": "Professional glasses designed for office wear, combining style and functionality."
   },
   {
     "id": "gl010",
@@ -147,81 +156,7 @@
     "isOnSale": false,
     "discountPercent": 0,
     "tags": ["new_arrival"],
-    "stock": 95
-  },
-  {
-    "id": "gl011",
-    "name": "Bold Tortoise Shell",
-    "image": "/images/glass1.png",
-    "price": 51.99,
-    "originalPrice": 69.99,
-    "rating": 4.6,
-    "reviews": 36,
-    "category": "Women",
-    "isNew": false,
-    "isOnSale": true,
-    "discountPercent": 26,
-    "tags": ["best_selling", "discounted_offer"],
-    "stock": 85
-  },
-  {
-    "id": "gl012",
-    "name": "Sleek Aviator",
-    "image": "/images/glass2.png",
-    "price": 58.99,
-    "originalPrice": 74.99,
-    "rating": 4.9,
-    "reviews": 50,
-    "category": "Men",
-    "isNew": true,
-    "isOnSale": true,
-    "discountPercent": 21,
-    "tags": ["new_arrival", "best_selling", "discounted_offer"],
-    "stock": 100
-  },
-  {
-    "id": "gl013",
-    "name": "Color Pop Frames",
-    "image": "/images/glass3.png",
-    "price": 33.99,
-    "originalPrice": 49.99,
-    "rating": 4.2,
-    "reviews": 22,
-    "category": "Unisex",
-    "isNew": false,
-    "isOnSale": false,
-    "discountPercent": 0,
-    "tags": ["flash_sale"],
-    "stock": 65
-  },
-  {
-    "id": "gl014",
-    "name": "Junior Vision",
-    "image": "/images/glass4.png",
-    "price": 26.99,
-    "originalPrice": 39.99,
-    "rating": 4.3,
-    "reviews": 17,
-    "category": "Kids",
-    "isNew": true,
-    "isOnSale": true,
-    "discountPercent": 33,
-    "tags": ["new_arrival", "discounted_offer"],
-    "stock": 120
-  },
-  {
-    "id": "gl015",
-    "name": "Timeless Metal Frame",
-    "image": "/images/glass5.png",
-    "price": 47.99,
-    "originalPrice": 59.99,
-    "rating": 4.5,
-    "reviews": 30,
-    "category": "Men",
-    "isNew": false,
-    "isOnSale": true,
-    "discountPercent": 20,
-    "tags": ["discounted_offer, flash_sell"],
-    "stock": 75
+    "stock": 95,
+    "description": "Trendy summer sunglasses offering UV protection and a stylish look."
   }
 ]

@@ -4,6 +4,7 @@ import { FaChevronLeft, FaChevronRight, FaEye, FaHeart } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { ImLoop } from "react-icons/im";
 import RatingStars from "../RatingStars/RatingStars";
+import { Link } from "react-router";
 
 const SectionCarousel = ({ dataToShow = "all_products" }) => {
   const [glasses, setGlasses] = useState([]);
@@ -52,16 +53,20 @@ const SectionCarousel = ({ dataToShow = "all_products" }) => {
                   )}
 
                   <div className="absolute right-3 bottom-3 hidden flex-col gap-2 group-hover:flex">
-                    {[FaEye, FaHeart, FaShoppingCart, ImLoop].map(
-                      (Icon, idx) => (
-                        <button
-                          key={idx}
-                          className="p-2 bg-white rounded-full shadow-md hover:bg-[#59b8d7] cursor-pointer hover:text-white transition duration-200 ease-in-out"
-                        >
-                          <Icon size={18} />
-                        </button>
-                      )
-                    )}
+                    <Link to={`glass/${glass.id}`} state={glass}>
+                      {" "}
+                      <button className="p-2 bg-white rounded-full shadow-md hover:bg-[#59b8d7] cursor-pointer hover:text-white transition duration-200 ease-in-out">
+                        <FaEye size={18} />
+                      </button>
+                    </Link>
+                    {[FaHeart, FaShoppingCart, ImLoop].map((Icon, idx) => (
+                      <button
+                        key={idx}
+                        className="p-2 bg-white rounded-full shadow-md hover:bg-[#59b8d7] cursor-pointer hover:text-white transition duration-200 ease-in-out"
+                      >
+                        <Icon size={18} />
+                      </button>
+                    ))}
                   </div>
 
                   <img
