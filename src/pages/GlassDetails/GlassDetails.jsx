@@ -3,15 +3,14 @@ import RatingStars from "../../components/shared/RatingStars/RatingStars";
 import { Link, useLocation } from "react-router";
 import React360Viewer from "react-360-view";
 
-const ProductDetails = () => {
+const GlassDetails = () => {
   const [glass, setGlass] = useState(null);
   const location = useLocation();
-  console.log(location);
 
   useEffect(() => {
     const glass = location?.state;
     setGlass(glass);
-  }, [location]);
+  }, [location, glass]);
 
   if (!glass) {
     return <h3 className="text-center py-10 font-semibold ">Loading...</h3>;
@@ -30,7 +29,7 @@ const ProductDetails = () => {
         </Link>
         <div className="max-w-5xl bg-white mx-auto mt-10 shadow-xl rounded-2xl overflow-hidden flex flex-col md:flex-row">
           {/* Left Image */}
-          <div className="md:w-1/2 p-6 select-none overflow-hidden touch-none flex items-center justify-center">
+          <div className="md:w-1/2 p-6 select-none overflow-hidden flex items-center justify-center">
             <React360Viewer
               amount={10}
               imagePath="/images/glass/"
@@ -106,4 +105,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default GlassDetails;
