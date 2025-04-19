@@ -53,11 +53,11 @@ export default function HeroArea() {
             {[1, 2, 3].map((_, idx) => (
               <SwiperSlide key={idx}>
                 <div className="py-14">
-                  <div className="flex justify-center items-center gap-8">
+                  <div className="flex flex-col-reverse sm:flex-row  justify-center items-center gap-8">
                     {/* left content */}
-                    <div className="space-y-2 w-1/3">
+                    <div className="space-y-2 sm:w-1/3">
                       <span className="text-[#95c9dd]">Coming Soon April</span>
-                      <h1 className="uppercase leading-18 text-black 2xl:text-6xl text-5xl font-bold ">
+                      <h1 className="uppercase  sm:leading-10 md:leading-12 lg:leading-18 text-black 2xl:text-6xl text-lg sm:text-3xl md:text-4xl  lg:text-5xl font-bold ">
                         New fashion & modern eyeglassess
                       </h1>
                       <button

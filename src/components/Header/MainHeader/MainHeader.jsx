@@ -3,20 +3,21 @@ import SearchBar from "../components/SearchBar";
 
 export default function MainHeader() {
   return (
-    <div className="mt-6">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <section className="mt-0 md:mt-6">
+      <div className="container mx-auto px-4 flex justify-center sm:justify-between items-center flex-wrap md:flex-nowrap">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-midnight tracking-wide">
-          <a href="#">
-            <img src="/logo.jpg" alt="try-now" />
-          </a>
-        </h1>
+
+        <a href="#">
+          <img src="/logo.jpg" alt="try-now" />
+        </a>
 
         {/* Search Box */}
-        <SearchBar />
+        <div className="w-full md:w-[50%] mt-4 md:mt-0">
+          <SearchBar />
+        </div>
 
         {/* Icons */}
-        <div className="flex items-center gap-6 text-xl text-midnight">
+        <div className="flex items-center gap-6 text-xl text-midnight mt-4 md:mt-0 w-full md:w-auto justify-center md:justify-end">
           <FiUser className="cursor-pointer hover:text-tahiti" />
           <FiHeart className="cursor-pointer hover:text-tahiti" />
           <div className="relative cursor-pointer hover:text-tahiti">
@@ -27,6 +28,6 @@ export default function MainHeader() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

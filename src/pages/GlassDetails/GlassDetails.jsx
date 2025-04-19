@@ -17,7 +17,7 @@ const ProductDetails = () => {
     return <h3 className="text-center py-10 font-semibold ">Loading...</h3>;
   }
   return (
-    <section className="min-h-screen py-10 px-4">
+    <section className="min-h-screen bg-gray-100 py-10 px-4">
       <div className="container mx-auto">
         {/* back to home */}
         <Link to={"/"}>
@@ -28,16 +28,13 @@ const ProductDetails = () => {
             Home
           </button>
         </Link>
-        <div className="bg-white max-w-5xl mx-auto mt-10 shadow-xl rounded-2xl overflow-hidden flex flex-col md:flex-row">
+        <div className="max-w-5xl bg-white mx-auto mt-10 shadow-xl rounded-2xl overflow-hidden flex flex-col md:flex-row">
           {/* Left Image */}
-          <div
-            onWheel={(e) => e.preventDefault()}
-            className="md:w-1/2 p-6 select-none overflow-hidden touch-none flex items-center justify-center"
-          >
+          <div className="md:w-1/2 p-6 select-none overflow-hidden touch-none flex items-center justify-center">
             <React360Viewer
-              amount={4}
+              amount={10}
               imagePath="/images/glass/"
-              fileName="glass-{index}.jpg"
+              fileName="glass-{index}.png"
               autoplay={false}
               loop={true}
               dragSpeed={50}

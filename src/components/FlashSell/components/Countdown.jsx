@@ -27,7 +27,7 @@ const DealCountdown = () => {
 
   return (
     <div className="p-3 mt-5 bg-white border border-gray-300 rounded-full flex justify-between items-center max-w-md w-full">
-      <p className="text-black font-bold text-xl">Deal of The Day</p>
+      <p className="text-black font-bold  sm:text-xl">Deal of The Day</p>
       <div className="flex gap-3 items-center">
         <span>End in:</span>
         <div className="flex gap-2">

@@ -21,15 +21,19 @@ const NewsLetter = () => {
   return (
     <section className="py-10">
       <div className="container mx-auto px-4">
-        {/* newsletter */}
-        <div className="bg-black py-5 px-20 flex justify-between items-center rounded-full w-full">
-          <p className="text-xl font-semibold text-white max-w-sm w-full">
+        {/* Newsletter */}
+        <div className="bg-black py-6 px-6 md:px-10 flex flex-col md:flex-row md:justify-between items-center gap-4 rounded-full w-full">
+          <p className="text-xl font-semibold text-white text-center md:text-left w-full md:max-w-sm">
             Join Our Newsletter
           </p>
-          <div className="bg-white w-full rounded-full p-2 flex justify-between items-center">
-            <input type="email" className="focus:border-0 focus:outline-0" />
+          <div className="bg-white w-full flex items-center justify-between rounded-full px-4 py-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full bg-transparent outline-none text-sm"
+            />
             <button
-              className="bg-black text-white cursor-pointer px-4 py-1 rounded-full text-base font-semibold"
+              className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap"
               type="submit"
             >
               Subscribe
@@ -38,11 +42,11 @@ const NewsLetter = () => {
         </div>
 
         {/* Offer Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {offers.map((offer, index) => (
             <div
               key={index}
-              className="flex items-center gap-4  p-4 justify-center"
+              className="flex items-center gap-4 text-center sm:text-left justify-center sm:justify-start"
             >
               {offer.icon}
               <p className="font-semibold text-gray-700">{offer.text}</p>

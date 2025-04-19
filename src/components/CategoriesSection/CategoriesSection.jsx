@@ -1,5 +1,3 @@
-import React from "react";
-import useGlassess from "../../hooks/useGlasses";
 import SectionTitle from "../shared/SectionTitle/SectionTitle";
 
 const categories = [
@@ -32,8 +30,6 @@ const featuredImg = {
   img3: "/fi3.jpeg",
 };
 const CategoriesSection = () => {
-  const { glassess } = useGlassess();
-  console.log(glassess);
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
@@ -59,18 +55,18 @@ const CategoriesSection = () => {
               <img
                 src={featuredImg.img1}
                 alt="featured image"
-                className="rounded-md mb-4 w-2/3 mx-auto"
+                className="rounded-md mb-4 w-3/4 mx-auto"
               />
               <div className="flex justify-center gap-4">
                 <img
                   src={featuredImg.img2}
                   alt="image"
-                  className="w-20 h-20 rounded-md"
+                  className="w-24 h-24 rounded-md"
                 />
                 <img
                   src={featuredImg.img3}
                   alt="image"
-                  className="w-20 h-20 rounded-md"
+                  className="w-24 h-24 rounded-md"
                 />
               </div>
             </div>
